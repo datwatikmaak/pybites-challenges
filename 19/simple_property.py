@@ -4,11 +4,11 @@ NOW = datetime.now()
 
 
 class Promo:
-    def __init__(self, name=str, expires=datetime):
+    def __init__(self, name, expires):
         self.name = name
         self.expires = expires
-        self._expired = NOW
 
     @property
     def expired(self):
-        return bool(self._expired)
+        if self.expires < NOW:
+            return True
