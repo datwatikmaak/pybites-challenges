@@ -10,11 +10,14 @@ shakespeare_unformatted = """
 
 
 def print_hanging_indents(poem):
-
     result = "\n".join([x.strip(" ") for x in "".join(poem).split("\n")])
 
     print(result)
+    print(type(result))
     print(repr(result))
+
+    if result.startswith("\n\n"):
+        print("yes it does")
 
 
 print_hanging_indents(shakespeare_unformatted)
