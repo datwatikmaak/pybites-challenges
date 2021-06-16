@@ -34,8 +34,24 @@ def get_all_matching_models(cars=cars, grep='trail'):
     """return a list of all models containing the case insensitive
        'grep' string which defaults to 'trail' for this exercise,
        sort the resulting sequence alphabetically"""
-    if " " in cars.values():
-        return cars.values()
+    delimiter = ","
+    models = cars["Ford"] + cars["Holden"] + cars["Nissan"] + cars["Honda"] + cars["Jeep"]
+
+    # turn all models in one long string of models
+    string_of_models = delimiter.join(models)
+    # print(string_of_models)
+
+    # turn all models from the string into a list of all models
+    list_of_models = string_of_models.split(",")
+    # print(list_of_models)
+
+    # loop over list to check of a model has a space
+    models_with_space = []
+    for model in list_of_models:
+        if " " in model:
+            models_with_space.append(model)
+
+    return models_with_space
 
 
 get_all_matching_models(cars)
