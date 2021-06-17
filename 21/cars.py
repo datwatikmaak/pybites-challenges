@@ -44,12 +44,12 @@ def get_all_matching_models(cars=cars, grep='trail'):
     list_of_models = string_of_models.split(",")
 
     # loop over list to check of a model has a space
-    models_with_space = []
+    trail = []
     for model in list_of_models:
-        if " " in model:
-            models_with_space.append(model)
+        if model.startswith("trail"):
+            trail.append(model)
 
-    return models_with_space
+    return trail.sort()
 
 
 get_all_matching_models(cars)
