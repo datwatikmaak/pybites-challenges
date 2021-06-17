@@ -43,15 +43,15 @@ def get_all_matching_models(cars=cars, grep='trail'):
     # turn all models from the string into a list of all models
     list_of_models = string_of_models.split(",")
 
-    # loop over list to check of a model has a space
-    trail = []
+    # loop over list to check of a modelname contains grep
+    models_grep = []
     for model in list_of_models:
-        if grep in model.casefold():
-            trail.append(model)
+        if grep.casefold() in model.casefold():
+            models_grep.append(model)
 
-    sorted_trail = sorted(trail)
+    sorted_models_grep = sorted(models_grep)
 
-    return sorted_trail
+    return sorted_models_grep
 
 
 get_all_matching_models(cars)
