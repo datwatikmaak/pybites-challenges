@@ -1,6 +1,3 @@
-import string
-
-
 def get_index_different_char(chars):
     chars = ["-" if char == "" else char for char in chars]
     string_of_chars = ''.join(str(char).strip() for char in chars)
