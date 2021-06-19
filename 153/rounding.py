@@ -16,4 +16,4 @@ def round_up_or_down(transactions, up=True):
     return rounded_numbers
 
 
-round_up_or_down([2.05, 3.55, 4.50, 10.76, 100.25])  # [3, 4, 5, 11, 101]
+round_up_or_down([2.05, 3.55, 4.50, 10.76, 100.25])
