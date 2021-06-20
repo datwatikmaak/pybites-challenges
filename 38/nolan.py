@@ -18,8 +18,8 @@ xmlstring = '''<?xml version="1.0" encoding="UTF-8"?>
 
 def get_tree():
     """You probably want to use ET.fromstring"""
-    object_tree = ET.ElementTree(ET.fromstring(xmlstring))
-    return object_tree
+    tree = ET.fromstring(xmlstring)
+    return tree
 
 
 get_tree()
@@ -27,7 +27,15 @@ get_tree()
 
 def get_movies():
     """Call get_tree and retrieve all movie titles, return a list or generator"""
-    pass
+    tree = get_tree()
+    movie_titles = []
+    for movie in tree.findall("movie"):
+        movie_titles.append(movie.attrib["title"])
+
+    return movie_titles
+
+
+get_movies()
 
 
 def get_movie_longest_runtime():
