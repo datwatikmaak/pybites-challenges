@@ -3,8 +3,8 @@ from typing import Any
 
 
 def pretty_string(obj: Any) -> str:
-    Any = pprint.pformat(str, width=60, compact=True, depth=2, sort_dicts=True)
-    return Any
+    pp = pprint.PrettyPrinter(width=60, depth=2, compact=False, sort_dicts=True)
+    return pp.pformat(obj)
 
 
-pretty_string(Any)
+pretty_string(obj=Any)
