@@ -12,16 +12,12 @@ def get_games():
     """Parses Steam's RSS feed and returns a list of Game namedtuples"""
     d = feedparser.parse(FEED_URL)
 
-    steam_rss = []
+    games = []
 
     for entry in d["entries"]:
-        title = entry.title
-        link = entry.link
+        games.append(Game(title=entry.title, link=entry.link))
 
-        steam_rss.append((title, link))
-
-    print(steam_rss)
-    print(type(steam_rss))
+    return games
 
 
 get_games()
