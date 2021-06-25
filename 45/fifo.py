@@ -2,7 +2,12 @@ from collections import deque
 
 
 def my_queue(n=5):
-    pass
+    dq = deque([], maxlen=n)
+    for x in range(n):
+        if dq == n:
+            dq.popleft()
+            dq.append(x)
+    return dq
 
 
 if __name__ == '__main__':
