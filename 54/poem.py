@@ -1,12 +1,16 @@
 INDENTS = 4
 
-shakespeare_unformatted = """
-                          To be, or not to be, that is the question:
-                          Whether 'tis nobler in the mind to suffer
+rosetti_unformatted = """
+                      Remember me when I am gone away,
+                      Gone far away into the silent land;
+                      When you can no more hold me by the hand,
 
-                          The slings and arrows of outrageous fortune,
-                          Or to take Arms against a Sea of troubles,
-                          """
+                      Nor I half turn to go yet turning stay.
+
+                      Remember me when no more day by day
+                      You tell me of our future that you planned:
+                      Only remember me; you understand
+                      """
 
 
 def print_hanging_indents(poem):
@@ -30,4 +34,4 @@ def print_hanging_indents(poem):
     print(formatted_poem)
 
 
-print_hanging_indents(shakespeare_unformatted)
+print_hanging_indents(rosetti_unformatted)
