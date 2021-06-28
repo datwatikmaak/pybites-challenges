@@ -10,14 +10,24 @@ shakespeare_unformatted = """
 
 
 def print_hanging_indents(poem):
-    result = "\n".join([x.strip(" ") for x in "".join(poem).split("\n")])
+    lines = poem.strip().split("\n")
+    lines = map(str.strip, lines)
 
-    print(result)
-    print(type(result))
-    print(repr(result))
+    formatted_poem = ""
+    is_first_line = True
+    indent = " " * INDENTS
 
-    if result.startswith("\n\n"):
-        print("yes it does")
+    for line in lines:
+        if line == "":
+            is_first_line = True
+            continue
+        if is_first_line:
+            formatted_poem += line + "\n"
+            is_first_line = False
+        else:
+            formatted_poem += indent + line + "\n"
+
+    print(formatted_poem)
 
 
 print_hanging_indents(shakespeare_unformatted)
