@@ -18,12 +18,7 @@ def create_parser():
     parser.add_argument('-w', '--weight', dest='weight', type=int, help='Your weight in kg')
     parser.add_argument('-l', '--length', dest='length', type=int, help='Your length in cm')
 
-    args = parser.parse_args()
-
-    return argparse.ArgumentParser()
-
-
-create_parser()
+    return parser
 
 
 def handle_args(args=None):
