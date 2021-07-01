@@ -3,6 +3,31 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/beginner-bites/8/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/beginner-bites/19/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/beginner-bites/21/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/beginner-bites/26/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/beginner-bites/32/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/beginner-bites/37/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/beginner-bites/38/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/beginner-bites/43/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/beginner-bites/45/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/beginner-bites/54/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/beginner-bites/55/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/beginner-bites/56/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/beginner-bites/64/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/beginner-bites/66/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/beginner-bites/67/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/beginner-bites/74/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/beginner-bites/77/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/beginner-bites/80/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/beginner-bites/115/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/beginner-bites/133/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/beginner-bites/153/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/beginner-bites/161/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/beginner-bites/176/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/beginner-bites/180/.pytest_cache/v" />
+      <excludeFolder url="file://$MODULE_DIR$/beginner-bites/324/.pytest_cache/v" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.8 (pybites-challenges)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
